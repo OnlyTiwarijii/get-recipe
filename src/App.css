@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+  min-height: 100vh;
+}
+
+.App {
+  text-align: center;
+  padding: 30px;
+  color: #333;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+input {
+  padding: 12px 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 25px 0 0 25px;
+  outline: none;
+  width: 300px;
+}
+
+button {
+  padding: 12px 20px;
+  background: #ff5722;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 0 25px 25px 0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #e64a19;
+}
+
+.recipes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.recipe-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s;
+}
+
+.recipe-card:hover {
+  transform: translateY(-8px);
+}
+
+.recipe-card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.recipe-card p {
+  font-weight: 600;
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.recipe-card a {
+  text-decoration: none;
+  background: #ff5722;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.recipe-card a:hover {
+  background: #e64a19;
+}
